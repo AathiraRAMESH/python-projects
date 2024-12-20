@@ -1,0 +1,18 @@
+imoji={
+    "😊":"smiling face with smiling eyes",
+    "👍":"thumbs up",
+    "🙌":"raising hands",
+    "🤞":"crossed finger",
+    "😒":"unamused face",
+    "😂":"face with tears of joy"
+}
+def imoji_to_text(imoji_input):
+    return imoji.get(imoji_input,"unknown imoji")
+
+
+print("welcome to imoji world")
+imoji_input=input("give any imoji")
+
+
+text_output=imoji_to_text(imoji_input)
+print(f"The meaning of the emoji is {text_output}")
