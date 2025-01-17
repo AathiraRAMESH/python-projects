@@ -1,0 +1,10 @@
+import time
+def traffic_signal():
+    while True:
+        print("🚦Red light:stop")
+        time.sleep(10)
+        print("🚦Yellow light:get ready")
+        time.sleep(5)
+        print("🚦 Green light:go")
+        time.sleep(15)
+traffic_signal()
