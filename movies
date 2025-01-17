@@ -1,0 +1,20 @@
+movies={"goat movie":"vijay",
+        "billa movie":"ajith",
+        "amaran movie":"sivakarthikeyan",
+        "vikram movie":"kamal haasan",
+        "Vettaiyan movie":"rajinikanth"}
+print(movies)
+
+print(movies["billa movie"])
+print(movies.get("billa movie"))
+print(len("billa movie"))
+
+print(movies.keys())
+print(movies.values())
+
+movies["amaran movie"]="sivakarthikeyan"
+print(movies)
+
+for key,value in movies.items():
+    print(key,":",value)
+print(movies.items())
