@@ -1,0 +1,32 @@
+def simple_calculator():
+    print("welcome to simple calculator")
+    print("you can solve simple problems")
+    try:
+        number1=int(input("enter the first number"))
+        number2=int(input("enter the second number"))
+        operator=input("+,-,*,/")
+        if operator == "+":
+            result=number1+number2
+        elif operator == "-":
+            result=number1-number2
+        elif operator == "*":
+            result=number1*number2
+        elif operator == "/":
+            result=number1/number2
+        else :
+            raise ValueError("incorrect operator. please use +,-,*,/")
+        print(f" The result is {result}")
+    except ZeroDivisionError:
+        print(" you cannot divide any number with zero")
+    except ValueError:
+        print(" you might entered a symbol or an alphabet . please use number only ")
+    except Exception:
+        print("some error occured . please try again")
+    print(" well ! thankyou for using simple calculator")
+
+
+simple_calculator()
+
+a = "10"
+b = 20
+print(a + str(b))
